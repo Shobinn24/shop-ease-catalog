@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import Cart from './Cart';
 import './App.css';
-
+// Sample product data - in a real app, this might come from an API
 const products = [
   { id: 1, title: 'Laptop', category: 'Electronics', price: 999, image: 'laptop.jpg' },
   { id: 2, title: 'Coffee Maker', category: 'Home Appliances', price: 49, image: 'coffee-maker.jpg' },
@@ -12,6 +12,7 @@ const products = [
 ];
 
 function App() {
+  // State for filter, search term, and cart
   const [filter, setFilter] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [cart, setCart] = useState([]);
